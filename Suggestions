@@ -1,0 +1,14 @@
+
+                            # Creating a random password generator
+
+import random
+import string
+
+
+pass_len=8
+strings=(string.ascii_letters+string.digits+string.punctuation)
+
+
+for i in range(pass_len):
+    password=random.choice(strings)
+    print(password,end="")
